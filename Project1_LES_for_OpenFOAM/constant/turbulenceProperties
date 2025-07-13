@@ -1,0 +1,9 @@
+simulationType  LES;
+
+LES
+{
+    model          oneEqEddy;
+    delta          cubeRootVol;
+    printCoeffs    on;
+}
+// The oneEqEddy model is a simple eddy-viscosity model that uses a single equation to compute the turbulent viscosity.
