@@ -1,0 +1,19 @@
+/* Initial velocity field */
+dimensions      [0 1 -1 0 0 0 0];
+internalField   uniform (1 0 0);
+boundaryField
+{
+    inlet
+    {
+        type fixedValue;
+        value uniform (1 0 0);
+    }
+    outlet
+    {
+        type zeroGradient;
+    }
+    walls
+    {
+        type noSlip;
+    }
+}
